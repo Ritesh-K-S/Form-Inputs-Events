@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- adding font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <!-- adding custom css -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div id="main">
+        
+        <!-- box for radio button -->
+        <div class="box">
+            <div class="box-content">
+                <p>Radio Button Event</p>
+                <input type="radio" id="male" name="gender" onchange="radioBtnChange('Male')" value="male">
+                <label for="male">Male</label>
+                <br>
+                <input type="radio" id="female" name="gender" onchange="radioBtnChange('Female')">
+                <label for="female">Female</label>
+                <br>
+                <input type="radio" id="other" name="gender" onchange="radioBtnChange('Other')">
+                <label for="other">Other</label>
+                <h6 id="radiobtninline-result"></h6>
+                <h6 id="radiobtnexternal-result"></h6>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <!-- adding jquery js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- adding custom js -->
+    <script src="index.js"></script>
+</body>
+</html>
